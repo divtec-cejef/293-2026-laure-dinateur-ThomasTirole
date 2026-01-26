@@ -77,3 +77,14 @@ header {
 .metier {
     margin-top: -5px;
 }
+
+li {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin: 30px;
+}
+
+nav li > a:hover {
+    color: #2ec4b6;
+}
