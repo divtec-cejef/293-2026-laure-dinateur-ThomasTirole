@@ -1,0 +1,79 @@
+/* Pour les écrans >= 480px */
+@media (min-width: 480px) {
+
+    /* Version avec display: inline-block */
+    .page-index .realisations li {
+        width: calc(85%/3);
+    }
+
+    /* Version avec flexbox */
+    /*.page-index .realisations li {
+        flex-basis: calc(85%/3);
+        flex-grow: 1;
+    }*/
+
+    .page-infos .profil {
+        float: left;
+        margin: 0 5% 20px 0;
+    }
+
+    .page-contact .info,
+    .page-contact .contact {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+
+    .page-contact .contact {
+        width: 39%;
+        margin-left: 10%;
+    }
+
+}
+
+@media (min-width: 660px) {
+
+    header {
+        text-align: left;
+        border-bottom: 5px solid #2ec4b6;
+        vertical-align: top;
+    }
+
+    header .logo {
+        display: inline-block;
+        width: 42%;
+        margin-left: 5%;
+    }
+
+    header .logo .nom {
+        font-size: 2.5rem;
+    }
+
+    header .logo .metier {
+        margin-bottom: 20px;
+    }
+
+    header nav {
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+        width: 45%;
+        margin-right: 5%;
+        font-size: 1.125rem;
+    }
+
+    header nav ul li a {
+        margin: 0;
+    }
+}
+
+@media (min-width: 910px) {
+    header nav a[href="index.html"] {
+        display: inline;
+    }
+
+    main, footer {
+        max-width: calc(910px - 5%);
+        margin: 0 auto;
+    }
+}
