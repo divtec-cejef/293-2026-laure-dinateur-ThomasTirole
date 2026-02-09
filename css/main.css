@@ -29,6 +29,7 @@ body {
     font-weight: 400;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Changa One', sans-serif;
     font-weight: 400;
@@ -185,3 +186,79 @@ footer nav ul {
 .contact-info li {
     margin-bottom: .5em;
 }
+
+/* ***************************************
+============== TRAVAIL #3 ================
+*************************************** */
+
+/* J'ai oublié cette propriété précédemment, qui est essentielle pour que les images soient responsives
+et s'adaptent à la taille de leur conteneur. Sinon, elles dépassent et ça flingue l'affichage */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-index h1 {
+    text-align: center; /* Centrage du titre */
+}
+
+/* ***************************************
+=== VERSION AVEC DISPLAY: INLINE-BLOCK ===
+**************************************** */
+
+
+.realisations {
+    list-style: none; /* On enlève les puces de la liste */
+    margin: 0; /* On enlève les marges extérieures de la liste */
+    padding: 0; /* On enlève les marges intérieures de la liste */
+    font-size: 0; /* On met la taille de la police à 0 pour éviter les espaces entre les éléments inline-block */
+}
+
+.realisations li {
+    display: inline-block; /* On affiche les éléments de la liste en ligne */
+    width: 45%; /* Chaque élément prend 45% de la largeur du conteneur, ce qui permet d'en mettre 2 par ligne avec les marges */
+    margin: 2.5%; /* Marge autour de chaque élément pour créer de l'espace entre eux */
+    vertical-align: top; /* Aligne les éléments en haut de la ligne */
+    background-color: #e7e9eb /* Couleur de fond pour mieux visualiser les éléments */
+}
+
+.realisations figure {
+    margin: 0; /* Suppression des marges par défaut des figures */
+}
+
+.realisations figcaption {
+    padding: 10px; /* Espace entre le texte et les bords du figcaption */
+    font-size: 1rem; /* Taille de la police pour le texte du figcaption */
+    color: #011627; /* Couleur du texte du figcaption */
+    overflow: hidden; /* Empêche le texte de dépasser du figcaption si il est trop long */
+}
+
+/* ***************************************
+========= VERSION AVEC FLEXBOX ===========
+**************************************** */
+
+/*.realisations {
+    display: flex;
+    flex-wrap: wrap; !* Permet aux éléments de passer à la ligne si nécessaire *!
+    list-style-type: none; !* On enlève les puces *!
+    margin: 0; !* On enlèves les marges extérieures*!
+    padding: 0; !* idem*!
+    align-items: flex-start; !* Aligne les éléments en haut de la ligne *!
+}
+
+.realisations li {
+    flex-basis: 45%; !* Chaque élément prend 45% de la largeur du conteneur, c'est leur taille de base *!
+    background-color: #e7e9eb; !* Couleur de fond pour mieux visualiser les éléments *!
+    margin: 2.5%; !* Marge autour de chaque élément pour créer de l'espace entre eux *!
+}
+
+.realisations figure {
+    margin: 0; !* Suppression des marges des figures *!
+}
+
+.realisations figcaption {
+    padding: 10px; !* Espace entre le texte et les bords du figcaption *!
+    font-size: 1rem; !* Taille de la police pour le texte du figcaption *!
+    color: #011627; !* Couleur du texte du figcaption *!
+    overflow: hidden; !* Empêche le texte de dépasser du figcaption si il est trop long *!
+}*/
